@@ -1,0 +1,879 @@
+{\rtf1\ansi\deff3\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\fswiss\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f5\froman\fprq2\fcharset0 Calibri;}{\f6\fnil\fprq2\fcharset0 Noto Sans CJK SC;}{\f7\fnil\fprq2\fcharset0 Times New Roman;}{\f8\fnil\fprq2\fcharset0 Lohit Devanagari;}{\f9\fnil\fprq0\fcharset128 Lohit Devanagari;}{\f10\fnil\fprq2\fcharset0 Calibri;}}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}
+{\stylesheet{\s0\snext0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1 Normal;}
+{\*\cs15\snext15 Default Paragraph Font;}
+{\s16\sbasedon0\snext17\dbch\af6\langfe1046\dbch\af8\afs28\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb240\sa120\keepn\loch\f4\fs28\lang1046 T\u237\'edtulo;}
+{\s17\sbasedon0\snext17\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl276\slmult1\ql\widctlpar\faauto\sb0\sa140\loch\f5\fs22\lang1046 Corpo do texto;}
+{\s18\sbasedon17\snext18\dbch\af7\langfe1046\dbch\af9\afs22\alang1025\sl276\slmult1\ql\widctlpar\faauto\sb0\sa140\loch\f5\fs22\lang1046 Lista;}
+{\s19\sbasedon0\snext19\dbch\af7\langfe1046\dbch\af9\afs24\alang1025\ai\sl256\slmult1\ql\widctlpar\faauto\sb120\sa120\noline\loch\f5\fs24\lang1046\i Legenda;}
+{\s20\sbasedon0\snext20\dbch\af7\langfe1046\dbch\af9\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\noline\loch\f5\fs22\lang1046 \u205\'cdndice;}
+{\s21\snext21\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1 Normal Table;}
+}{\*\generator LibreOffice/6.4.6.2$Linux_X86_64 LibreOffice_project/40$Build-2}{\info{\creatim\yr2020\mo9\dy4\hr17\min46}{\author Aluizio Monteiro}{\revtim\yr2021\mo1\dy11\hr11\min47}{\printim\yr0\mo0\dy0\hr0\min0}}{\*\userprops{\propname Operator}\proptype30{\staticval \u193\'c1guia de fogo - jr}}\deftab720\deftab720
+\hyphauto1\viewscale100
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse451\pgwsxn12240\pghsxn15840\marglsxn1701\margrsxn1701\margtsxn1417\margbsxn1417\pgdscnxt0 Estilo padr\u227\'e3o;}}
+\formshade{\*\pgdscno0}\paperh15840\paperw12240\margl1701\margr1701\margt1417\margb1417\sectd\sbknone\sectunlocked1\pgndec\pgwsxn12240\pghsxn15840\marglsxn1701\margrsxn1701\margtsxn1417\margbsxn1417\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+{\*\ftnsep\chftnsep}\pgndec\pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+/* Criar um banco de dados chamado Detran, conforme o modelo abaixo, criar as chaves primarias}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+de cada tabela e tamb\u233\'e9m as chaves estrangeiras*/}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+create database detran;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+use detran;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+create table ESTADO (}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+ID_ESTADO int not null primary key,}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+NOME varchar(50) not null);}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+create table MUNICIPIO (}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+ID_MUNICIPIO int not null primary key,}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+NOME_MUNICIPIO varchar(150) not null,}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+FK_ESTADO int not null,}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+foreign key (FK_ESTADO) references ESTADO (ID_ESTADO) );}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+insert into estado (id_estado, nome) }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+values (1, 'DF'),}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+(2, 'GO'), }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+(3, 'SP'), }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+(4, 'MG'), }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+(5, 'RJ');}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+insert INTO MUNICIPIO (id_MUNICIPIO, NOME_MUNICIPIO, FK_ESTADO)}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+VALUES ('100','SOBRADINHO','1'), }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+('200','PLANALTINA','1'),}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+('300','PLANALTINA','2'),}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+('400','BELO HORIZONTE','4'),}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+('333','SAO PAULO','3'), }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+('350','CAMPINAS','3'), }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+('360','SANTO ANDRE','3');}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+select * from estado;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+select * from municipio;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+CREATE TABLE CATEGORIA (}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+ID_CATEGORIA INT NOT NULL PRIMARY KEY,}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+CATEGORIA_VEICULO VARCHAR(45) NOT NULL}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+);}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+select * from CATEGORIA;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+CREATE TABLE MARCA (}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+ID_MARCA INT NOT NULL PRIMARY KEY,}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+NOME_MARCA VARCHAR(60)}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+);}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+select * from marca;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+CREATE TABLE PROPRIETARIO (}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+ID_DONO INT NOT NULL PRIMARY KEY,}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+NOME_DONO VARCHAR(50) NOT NULL,}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+ENDERECO VARCHAR(100) NOT NULL,}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+BAIRRO VARCHAR(45),}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+CPF VARCHAR(14) ,}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+TELEFONE VARCHAR(45),}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+RG VARCHAR(45),}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+DT_NASCIMENTO DATE);}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+select * from PROPRIETARIO;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+alter table proprietario modify column nome_dono varchar(100);}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+CREATE TABLE VEICULO (}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+ID_VEICULO INT\u8198\'20 \u8198\'20 NOT NULL PRIMARY KEY,}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+PLACA VARCHAR(10) NOT NULL,}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+ANO YEAR,}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+FK_PROPRIETARIO INT NOT NULL,}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+FK_MARCA INT NOT NULL,}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+FK_CATEGORIA INT NOT NULL,}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+FK_MUNICIPIO INT NOT NULL,}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+FOREIGN KEY (FK_PROPRIETARIO) references PROPRIETARIO(ID_DONO),}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+FOREIGN KEY (FK_MARCA) references MARCA (ID_MARCA),}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+FOREIGN KEY (FK_CATEGORIA) references CATEGORIA (ID_CATEGORIA),}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+FOREIGN KEY (FK_MUNICIPIO) references MUNICIPIO (ID_MUNICIPIO)}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+);}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+select * from VEICULO;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+insert into veiculo (id_veiculo,placa,ano,fk_proprietario,fk_marca,fk_municipio, fk_categoria) }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+values}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+\tab (1,'JEX1010','2010',1,6,100,6),}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+\tab (2,'JDW1020','2015',1,5,200,1),}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+\tab (3,'PAZ1015','2016',3,3,333,3),}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+\tab (4,'ULA1000','2017',5,3,350,1),}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+\tab (5,'JJP2020','2018',5,2,300,4),}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+\tab (6,'KES7070','2015',4,6,100,1);}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+select * from veiculo;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+INSERT INTO MARCA (ID_MARCA, NOME_MARCA)}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+VALUES ('1','AUDI'), }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+('2', 'FIAT'), }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+('3','GM'), }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+('4','FORD'), }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+('5','HYUNDAI'), }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+('6','VW');}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+select * from MARCA;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+insert INTO CATEGORIA (ID_CATEGORIA, CATEGORIA_VEICULO)}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+VALUES ('1', 'SEDANS PEQUENOS'), }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+\tab \u8198\'20 \u8198\'20 \u8198\'20 ('2', 'SEDANS MEDIOS'), }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+('3', 'SEDANS GRANDE'),}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+('4', 'SUV'), }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+('5', 'SPORTS'), }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+('6', 'PICK-UPS PEQUENAS'), }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+('7', 'PICK-UPS GRANDES');}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+select * from CATEGORIA;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+insert into proprietario }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+(id_dono,nome_dono,endereco,bairro,CPF,telefone,RG,dt_nascimento) }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+values (1,'Jo\u227\'e3o Melo','Q 14','Sobradinho','51539524876','99841010','2487','1985-10-10'),}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+\tab \u8198\'20 \u8198\'20 \u8198\'20 (2,'Paulo Fernandes','SQS 210','Asa Sul','59585906856','98141100','3210','1996-02-05'),}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+\tab \u8198\'20 \u8198\'20 \u8198\'20 (3,'Ricardo Alves','Q 08','Sobradinho','98720121997','984147750','0614','1965-10-05'),}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+\tab \u8198\'20 \u8198\'20 \u8198\'20 (4,'Patr\u237\'edcia Lima','Q 11','Sobradinho','79337512610','992925050','3020','1960-02-15'),}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+\tab \u8198\'20 \u8198\'20 \u8198\'20 (5,'L\u237\'edvia Antunes','SQN 116','Asa Norte','41848579063','99872020','1200','1978-07-14'); }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+select * from proprietario;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+/* apagar tabela: drop table veiculo; */}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+/* usar os selects - Selecionar*/}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+/* 1)\tab Todos os NOMEESTADO e NOMEDOMUNICIPIO por ordem alfab\u233\'e9tica de NOMEESTADO*/}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+select * from estado.nome order by municipio.NOME_MUNICIPIO asc;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+select estado.nome, municipio.NOME_MUNICIPIO}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+from estado, municipio}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+where estado.id_estado = municipio.fk_estado}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+order by estado.nome asc;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+select estado.nome , municipio.nome_municipio}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+\tab from estado, municipio}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+where estado.id_estado = municipio.fk_estado}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+order by nome;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+/* 2)\tab Quantos estados tem cadastrado*/}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+select count(nome) from estado; }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+select * from estado; }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+/* 3)\tab Listar a placa, ano e categoria dos carros cadastrados*/}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+select veiculo.placa , veiculo.ano, categoria.CATEGORIA_VEICULO}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+\tab from veiculo, categoria}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+where categoria.id_categoria = veiculo.fk_categoria;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+*/ }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+/*EXPLICA\u199\'c7\u195\'c3O */}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+/*}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+SELECT <COLUNAS>}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+FROM <TABELAS>\u8198\'20 \u8198\'20 \u8198\'20 __ JOIN __ ON}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+WHERE <CONDI\u199\'c7\u195\'c3O PARA LINHAS>}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+GROUP BY <AGRUPAR>}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+HAVING <CONDI\u199\'c7\u195\'c3O PARA AS FUN\u199\'c7OES AGREGADORAS COUNT,SUM,MAX,MIN,AVG>}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+ORDER BY*/}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+/* 2)\tab Quantos estados tem cadastrado */}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+select count(id_estado)}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+from estado;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+/3)\tab Listar a placa, ano e categoria dos carros cadastrados/}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+select placa, ano, categoria_veiculo}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+from veiculo, categoria}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+where ID_CATEGORIA= veiculo.FK_CATEGORIA;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+/ou/}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+select placa, ano, categoria_veiculo}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+from veiculo, categoria}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+where ID_CATEGORIA= FK_CATEGORIA;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+/*4)\tab Listar quantos carros tem de cada categoria, obs. Categoria com nenhum carro cadastrado devem }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+aparecer na listagem por ordem crescente de quantidade de carros*/}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+select categoria_veiculo, count(placa)}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+from veiculo , categoria}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+where id_categoria=veiculo.FK_CATEGORIA}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+group by categoria_veiculo}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+order by count(placa);}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+/* mostrando com os que n\u227\'e3o tem nehum*/}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+select categoria_veiculo, count(placa)}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+from veiculo right join categoria}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+on id_categoria=veiculo.FK_CATEGORIA}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+group by categoria_veiculo}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+order by count(placa);}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+/* 5)\tab Listar quantos carros tem de cada marca, obs. Marcas com nenhum carro cadastrado }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+devem aparecer na listagem por ordem alfab\u233\'e9tica de marcas - semana que vem JOIN */}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+/* 5)\tab Listar quantos carros tem de cada marca\u8198\'20 \u8198\'20 */}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+select nome_marca, count(placa) as 'total_por_marca'}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+from marca, veiculo}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+where id_marca = fk_marca}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+group by nome_marca}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+order by count(placa) desc;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+/6)\tab Quantos munic\u237\'edpios tem cadastrados por NOMEESTADO em ordem alfab\u233\'e9tica por NOMEESTADO/}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+select nome, count(id_municipio)}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+from estado, municipio}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+where id_estado = municipio.FK_ESTADO}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+group by (nome);}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+select * from municipio;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+/* colocar chave estrangeira em tabela j\u225\'e1 criada - alter table add foreign key */}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+/* 7)\tab Listar os estados que n\u227\'e3o tem munic\u237\'edpios cadastrados - Pular */ }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+/* 8)\tab Listar o nome do propriet\u225\'e1rio e a placa do carro e ano\u8198\'20 \u8198\'20 \u8198\'20 */ }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+select nome_dono, placa, ano}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+from\u8198\'20 \u8198\'20 veiculo, proprietario}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+where id_dono=FK_PROPRIETARIO;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+/* 9)\tab Listar o nome do propriet\u225\'e1rio e a placa do carro, ano e marca\u8198\'20 \u8198\'20 */}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+select nome_dono, placa, ano, nome_marca}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+from\u8198\'20 \u8198\'20 veiculo, proprietario, marca}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+where ID_DONO = veiculo.FK_PROPRIETARIO}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+and\u8198\'20 \u8198\'20 ID_MARCA= veiculo.FK_MARCA;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+select nome_dono, placa, ano, nome_marca}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+from veiculo, proprietario, marca}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+where ID_DONO = FK_PROPRIETARIO }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+and ID_MARCA = FK_MARCA;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+/*\u8198\'20 \u8198\'20 10)\tab Listar todos os carros de 2015 */}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+select * from veiculo where ano=2015;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+/* 11)\tab Listar todos os propriet\u225\'e1rios que tem carros da marca HYUNDAI */}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+select nome_dono}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+from proprietario, veiculo, marca}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+where ID_DONO=veiculo.FK_PROPRIETARIO}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+and ID_MARCA=veiculo.FK_MARCA}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+and NOME_MARCA='HYUNDAI';}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+/12)\tab Listar quantos carros tem de cada marca/}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+SELECT NOME_MARCA, COUNT(ID_VEICULO)}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+FROM MARCA, VEICULO}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+WHERE ID_MARCA = veiculo.FK_MARCA}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+GROUP BY NOME_MARCA;\u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+/13)\tab Listar quantos carros cada propriet\u225\'e1rio tem/}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+select nome_dono, count(placa) as Total_carros}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+from proprietario, veiculo}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+where ID_DONO=veiculo.FK_PROPRIETARIO}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+group by nome_dono}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+order by count(placa);}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+/14)\tab Listar o nome do propriet\u225\'e1rio do carro mais velho/}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+/* todos os nomes de proprietarios*/}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+select nome_dono}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+from proprietario;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+/* todos os nomes de proprietarios carro mais antigo*/}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+select nome_dono, ano}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+from proprietario, veiculo}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+where id_dono = veiculo.FK_PROPRIETARIO}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+and\u8198\'20 \u8198\'20 ano=(select min(veiculo.ANO) from veiculo);}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+/15)\tab Listar o nome do propriet\u225\'e1rio do carro mais novo/}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+select nome_dono, ano}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+from proprietario, veiculo}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+where id_dono = veiculo.FK_PROPRIETARIO}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+and\u8198\'20 \u8198\'20 ano=(select max(veiculo.ANO) from veiculo);}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+/16)\tab Listar os carros do estado do DF/ }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+SELECT PLACA, ANO, NOME AS ESTADO}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+FROM VEICULO, MUNICIPIO, ESTADO}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+WHERE FK_MUNICIPIO = ID_MUNICIPIO}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+AND FK_ESTADO = ID_ESTADO}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+AND NOME = 'DF';}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+/* 17)\tab Listar os propriet\u225\'e1rios que n\u227\'e3o tem carro cadastrado\u8198\'20 \u8198\'20 - excluir usa join */}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+/*\u8198\'20 \u8198\'20 18)\tab Excluir o carro JEX1010 */}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+delete from veiculo where placa='JEX1010'; -- n\u227\'e3o d\u225\'e1 certo pois t\u225\'e1 com safe ligado, \u233\'e9 bom n\u227\'e3o delisgar safe}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+select * from veiculo;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+SELECT ID_VEICULO, PLACA FROM VEICULO WHERE PLACA = 'JEX1010';}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+DELETE FROM VEICULO WHERE ID_VEICULO = '1';}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+select * from veiculo;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+/*\u8198\'20 \u8198\'20 19)\tab Altera o endere\u231\'e7o da L\u237\'edvia para Asa Sul\u8198\'20 \u8198\'20 */}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+SELECT * FROM PROPRIETARIO;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+UPDATE PROPRIETARIO }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+SET BAIRRO = 'Asa Sul'}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+WHERE ID_DONO = 5; }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+/* como renomeia uma coluna?}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+ALTER TABLE XXXX RENAME COLUMN NOME_VELHO TO NOME_NOVO */ }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+/*\u8198\'20 \u8198\'20 20)\tab Excluir a marca VW. Aconteceu algum problema? Explique o que aconteceu. */}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+SELECT * FROM MARCA;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+DELETE FROM MARCA WHERE ID_MARCA = 6;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+/ERRO DE INTEGRIDADE REFERENCIAL, OU SEJA, N\u195\'c3O PODE APAGAR O REGISTRO PAI/}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+SELECT * FROM VEICULO;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+/21)\tab Alterar o ano do carro PAZ1015 para 2016/}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+UPDATE VEICULO}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+SET\u8198\'20 \u8198\'20 ANO = '2015'}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+WHERE PLACA = 'PAZ1015'; -- n\u227\'e3o d\u225\'e1 certo pois t\u225\'e1 com safe ligado, \u233\'e9 bom n\u227\'e3o delisgar safe}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+/*}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+ALTER TABLE = ALTERA A ESTRUTURA DA TABELA}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+16:48}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+ADICIONAR COLUNA}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+16:48}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+APAGAR COLUNA}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+16:48}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+RENOMEAR COLUNA}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+16:49}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+MUDAR OS TIPOS DE DADOS DA COLUNA}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+16:49}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+UPDATE ALTERA OS DADOS DA TABELA}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+16:49}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+ALTERAR ENDERECO DE UMA PESSOA}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+16:49}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+ALTERAR TELEFONE DE UMA PESSOA}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+16:50}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+ALTERAR A SENHA}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{\loch
+*/}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar\loch
+
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+/22)\tab Alterar nome e endere\u231\'e7o da Patr\u237\'edcia Lima/}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+SELECT * FROM PROPRIETARIO; }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+/Alterar nome e endere\u231\'e7o da Patr\u237\'edcia Lima/}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+UPDATE PROPRIETARIO }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+SET NOME_DONO = 'Patr\u237\'edcia de Sousa Lima',}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+ENDERECO\u8198\'20 \u8198\'20 = 'Q 30 Conjunto 2 casa 9'}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+WHERE ID_DONO = 4;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+/* como eu fa\u231\'e7o para apaga a foreign key referente \u224\'e0 coluna fk_marca da tabela veiculo..?}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+ALTER TABLE XXXX DROP FOREIGN KEY MMMM */ }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+/MYSQL - Fun\u231\'e7\u245\'f5es nativas/}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+select curdate(); -- selecionar a data do Sistema Operacional}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+select now(); -- selecionar a hora do SO}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+ }{\loch
+select * from proprietario;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 }{\loch
+select nome_dono, year(dt_nascimento) as ano}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+from proprietario;}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+/23)\tab Selecione o nome e a idade de todos os propriet\u225\'e1rios de carro/}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 }
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+select nome_dono, TIMESTAMPDIFF(YEAR,dt_nascimento,curdate()) as Idade}
+\par \pard\plain \s0\dbch\af7\langfe1046\dbch\af10\afs22\alang1025\sl256\slmult1\ql\widctlpar\faauto\sb0\sa160\hyphpar0\ltrpar\loch\f5\fs22\lang1046\cf0\kerning1\sl256\slmult1\li0\ri0\lin0\rin0\fi0\sb0\sa160\ltrpar{
+\u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 \u8198\'20 }{\loch
+from proprietario;}
+\par }
