@@ -8,7 +8,8 @@ ___
 
 ### Objetivo
 
-Codificar scripts de criação e consulta relacional com base em informações de um fragmento que mantêm dados de veículos.
+Gerar comandos DDL e DML relacionais com base em informações predefinidas.
+___
  
 ### Requisitos
 
@@ -16,24 +17,25 @@ Codificar scripts de criação e consulta relacional com base em informações d
 * Workbench
 * Editor de Texto
 * SQL
+___
 
-### Conteúdo
+### Conteúdo Principal
 
-* [Projeto](https://github.com/aluiziomonteiro/dba-cinema/blob/master/docs/projeto.docx)
-* [Diagramas](https://github.com/aluiziomonteiro/dba-cinema/blob/master/diagrama-brmodelo/diagrama.jpg)
-* [Script](https://github.com/aluiziomonteiro/dba-cinema/blob/master/schemas/empresacinema2.sql)
+* [Projeto](https://github.com/aluiziomonteiro/dba-detran/blob/master/docs/enunciado.docx)
+* [Diagrama](https://github.com/aluiziomonteiro/dba-detran/tree/master/db_detran_png.png)
+* [Script](https://github.com/aluiziomonteiro/dba-detran/blob/master/schema/db_detran.sql)
+___
 
 ### Gerando a Base de Dados
 
 A Base de Dados pode ser gerada executando este [script](https://github.com/aluiziomonteiro/dba-cinema/blob/master/schemas/empresacinema2.sql) a partir do CMD/Windows, Terminal/Linux/MacOS ou via Workbench.
-
-
+___
 
 ### Autor
 
 * [Aluizio Monteiro](https://www.linkedin.com/in/aluizio-monteiro/)
 
-
+___
 
 
 
