@@ -1,7 +1,6 @@
-/* Criar um banco de dados chamado db_detran, conforme o modelo abaixo, criaraschaves primarias
+/* Criar um banco de dados chamado db_detran, conforme o modelo abaixo, criar as chaves primarias
  de cada tabela e também as chaves estrangeiras*/
  
-/*DROP DATABASE db_detran;*/
 CREATE DATABASE db_detran;
 USE db_detran;
 
@@ -102,44 +101,32 @@ CREATE TABLE VEICULO (
 SELECT * FROM VEICULO;
     
 
-/* 2)	Quantos ESTADOS tem cadastrado*/
-
+/*2)	Quantos Estados tem cadastrado*/
 SELECT count(NOME) FROM ESTADO; 
 SELECT * FROM ESTADO; 
  
  
- /* 3)	Listar a PLACA, ANO e CATEGORIA dos carros cadastrados*/
- 
+ /*3)	Listar a placa, ano e categoria dos carros cadastrados*/
 SELECT VEICULO.PLACA , VEICULO.ANO, CATEGORIA.CATEGORIA_VEICULO
 	FROM VEICULO, CATEGORIA
     WHERE CATEGORIA.ID_CATEGORIA = VEICULO.FK_CATEGORIA;
-    
-/*EXPLICAÇÃO */
-/*
-SELECT <COLUNAS>
-    FROM <TABELAS>      __ JOIN __ ON
- WHERE <CONDIÇÃO PARA LINHAS>
- GROUP BY <AGRUPAR>
- HAVING <CONDIÇÃO PARAasFUNÇOES AGREGADORAS COUNT,SUM,MAX,MIN,AVG>
- ORDER BY*/
  
-/* 2)	Quantos ESTADOs tem cadastrado */
-
+/*2)	Quantos estados tem cadastrado */
 SELECT count(ID_ESTADO)
 FROM ESTADO;
 
-/*3)	Listar a PLACA, ANO e CATEGORIA dos carros cadastrados*/
-
+/*3)	Listar a placa, ano e categoria dos carros cadastrados*/
 SELECT PLACA, ANO, CATEGORIA_VEICULO
 	FROM VEICULO, CATEGORIA
 	WHERE ID_CATEGORIA= VEICULO.FK_CATEGORIA;
+    
 /*ou*/
 SELECT PLACA, ANO, CATEGORIA_VEICULO
 	FROM VEICULO, CATEGORIA
 	WHERE ID_CATEGORIA= FK_CATEGORIA;
 
-/*4)	Listar quantos carros tem de cada CATEGORIA, obs. CATEGORIA com nenhum carro cadastrado devem 
-aparecer na listagem por ordem crescente de quantIDade de carros*/
+/*4)	Listar quantos carros tem de cada categoria, obs. categoria com nenhum carro cadastrado devem 
+aparecer na listagem por ordem crescente de quantidade de carros*/
 
 SELECT CATEGORIA_VEICULO, count(PLACA)
 	FROM VEICULO , CATEGORIA
@@ -147,7 +134,7 @@ SELECT CATEGORIA_VEICULO, count(PLACA)
 	GROUP BY CATEGORIA_VEICULO
 	ORDER BY count(PLACA);
 
-/* mostrando com os que não tem nehum*/
+/* Mostrando com os que não tem nenhum*/
 SELECT CATEGORIA_VEICULO, count(PLACA)
 	FROM VEICULO 
     RIGHT JOIN CATEGORIA
@@ -155,9 +142,9 @@ SELECT CATEGORIA_VEICULO, count(PLACA)
 	GROUP BY CATEGORIA_VEICULO
 	ORDER BY count(PLACA);
 
- /* 5)	Listar quantos carros tem de cada MARCA, obs. MARCAS com nenhum carro cadastrado 
+/*5)	Listar quantos carros tem de cada marca, obs. marcas com nenhum carro cadastrado 
 devem aparecer na listagem por ordem alfabética de MARCAS - semana que vem JOIN */
-/* 5)	Listar quantos carros tem de cada MARCA    */
+/*5)	Listar quantos carros tem de cada marca*/
 
 SELECT NOME_MARCA, count(PLACA)as'total_por_MARCA'
 	FROM MARCA, VEICULO
@@ -165,7 +152,7 @@ SELECT NOME_MARCA, count(PLACA)as'total_por_MARCA'
     GROUP BY NOME_MARCA
     ORDER BY count(PLACA) DESC;
     
-/*6)	Quantos municípios tem cadastrados por NOME ESTADO em ordem alfabética por NOME ESTADO*/
+/*6)	Quantos municípios tem cadastrados por nome estado em ordem alfabética por nome estado*/
 SELECT NOME, count(ID_MUNICIPIO)
 FROM ESTADO, MUNICIPIO
 WHERE ID_ESTADO = MUNICIPIO.FK_ESTADO
@@ -174,16 +161,14 @@ GROUP BY (NOME);
 SELECT * FROM MUNICIPIO;
 
 
-/* colocar chave estrangeira em tabela já criada - ALTER TABLE add foreign key */
+/* Colocar chave estrangeira em tabela já criada - ALTER TABLE add foreign key */
 
-/* 7)	Listar os ESTADOs que não tem municípios cadastrados - Pular */ 
-
-/* 8)	Listar o NOME do proprietário e a PLACA do carro e ANO      */ 
+/*7)	Listar o nome do proprietário e a placa do carro e ano*/ 
 SELECT NOME_DONO, PLACA, ANO
 	FROM VEICULO, PROPRIETARIO
     WHERE ID_DONO=FK_PROPRIETARIO;
 
-/* 9)	Listar o NOME do proprietário e a PLACA do carro, ANO e MARCA    */
+/* 8)	Listar o nome do proprietário e a placa do carro, ano e marca*/
 SELECT NOME_DONO, PLACA, ANO, NOME_MARCA
 	FROM VEICULO, PROPRIETARIO, MARCA
 	WHERE ID_DONO = VEICULO.FK_PROPRIETARIO
@@ -194,47 +179,43 @@ SELECT NOME_DONO, PLACA, ANO, NOME_MARCA
     WHERE ID_DONO = FK_PROPRIETARIO 
     AND ID_MARCA = FK_MARCA;
     
-/*    10)	Listar todos os carros de 2015 */
+/*9)	Listar todos os carros de 2015 */
 SELECT * FROM VEICULO WHERE ANO=2015;
 
-/* 11)	Listar todos os proprietários que tem carros da MARCA HYUNDAI */
+/*10)	Listar todos os proprietários que tem carros da marca HYUNDAI */
 SELECT NOME_DONO
 	FROM PROPRIETARIO, VEICULO, MARCA
 	WHERE ID_DONO=VEICULO.FK_PROPRIETARIO
 	AND ID_MARCA=VEICULO.FK_MARCA
     AND NOME_MARCA='HYUNDAI';
     
-/*13)	Listar quantos carros cada proprietário tem*/
- 
+/*11)	Listar quantos carros cada proprietário tem*/
  SELECT NOME_DONO, count(PLACA)asTOTAL_CARROS
  FROM PROPRIETARIO, VEICULO
  WHERE ID_DONO=VEICULO.FK_PROPRIETARIO
  GROUP BY NOME_DONO
  ORDER BY count(PLACA);
  
- /*14)	Listar o NOME do proprietário do carro mais velho/
-    
-/* todos os NOMEs de PROPRIETARIOs*/
+/*12)	Listar o nome do proprietário do carro mais velho/
+/*13)	Todos os nomes de proprietários*/
 SELECT NOME_DONO
 	FROM PROPRIETARIO;
     
-/* todos os NOMEs de PROPRIETARIOs carro mais antigo*/
+/*13)	Todos os nomes de proprietários carro mais antigo*/
 SELECT NOME_DONO, ANO
 	FROM PROPRIETARIO, VEICULO
     WHERE ID_DONO = VEICULO.FK_PROPRIETARIO
     AND ANO=(SELECT min(VEICULO.ANO) FROM VEICULO);
 
-/*15)   Listar o NOME do proprietário do carro mais novo*/
+/*14)	Listar o nome do proprietário do carro mais novo*/
 SELECT NOME_DONO, ANO
 FROM PROPRIETARIO, VEICULO
 WHERE ID_DONO = VEICULO.FK_PROPRIETARIO
 AND ANO=(SELECT max(VEICULO.ANO) FROM VEICULO);
 
     
-/* 17)	Listar os proprietários que não tem carro cadastrado    - excluir usa JOIN */
-
-/* 18)	Excluir o carro JEX1010 */
-delete FROM VEICULO WHERE PLACA='JEX1010'; -- não dá certo pois tá com safe ligado, é bom não delisgar safe
+/*15)	Excluir o carro JEX1010 */
+delete FROM VEICULO WHERE PLACA='JEX1010'; -- não dá certo pois tá com safe ligado, é bom não desligar o safe
 SELECT * FROM VEICULO;
 
 SELECT ID_VEICULO, PLACA FROM VEICULO WHERE PLACA = 'JEX1010';
@@ -242,63 +223,34 @@ SELECT ID_VEICULO, PLACA FROM VEICULO WHERE PLACA = 'JEX1010';
 DELETE FROM VEICULO WHERE ID_VEICULO = '1';
 SELECT * FROM VEICULO;
 
-/*    19)	ALTERa o endereço da Lívia para ASa Sul    */
+/*17)	Alterar o endereço da Lívia para Asa Sul    */
 SELECT * FROM PROPRIETARIO;
 	
 UPDATE PROPRIETARIO 
 	SET BAIRRO = 'ASa Sul'
     WHERE ID_DONO = 5; 
 
-/*    20)	Excluir a MARCA VW. Aconteceu algum problema? Explique o que aconteceu. */
+/*18)	Excluir a MARCA VW. Aconteceu algum problema? Explique o que aconteceu. */
 SELECT * FROM MARCA;
 DELETE FROM MARCA WHERE ID_MARCA = 6;
 /* ERRO DE INTEGRIDADE REFERENCIAL, OU SEJA, NÃO PODE APAGAR O REGISTRO PAI*/
+
 SELECT * FROM VEICULO;
-/*21)	ALTERar o ANO do carro PAZ1015 para 2016*/
+
+/*19)	Alterar o ano do carro PAZ1015 para 2016*/
 UPDATE VEICULO
 	SET ANO = '2015'
 	WHERE PLACA = 'PAZ1015'; -- não dá certo pois tá com safe ligado, é bom não delisgar safe
-    /*
-ALTER TABLE = ALTERA A ESTRUTURA DA TABELA
-
-16:48
-ADICIONAR COLUNA
-
-16:48
-APAGAR COLUNA
-
-16:48
-RENOMEAR COLUNA
-
-16:49
-MUDAR OS TIPOS DE DADOS DA COLUNA
-
-16:49
-UPDATE ALTERA OS DADOS DA TABELA
-
-16:49
-ALTERAR ENDERECO DE UMA PESSOA
-
-16:49
-ALTERAR TELEFONE DE UMA PESSOA
-
-16:50
-ALTERAR A SENHA
-*/ 
-/*22)	ALTERar NOME e endereço da Patrícia Lima*/
 
 SELECT * FROM PROPRIETARIO; 
 
-/*ALTERar NOME e endereço da Patrícia Lima*/
+/*20)	Alterar nome e endereço da Patrícia Lima*/
 UPDATE PROPRIETARIO 
 	SET NOME_DONO = 'Patrícia de Sousa Lima',
     ENDERECO = 'Q 30 Conjunto 2 cASa 9'
     WHERE ID_DONO = 4;
-    
-/* como eu faço para apaga a foreign key referente à coluna FK_MARCA da tabela VEICULO..?
-ALTER TABLE XXXX DROP FOREIGN KEY MMMM */ 
 
-/* MYSQL - Funções nativAS*/
+/* MYSQL - Funções nativas*/
 SELECT curdate(); -- selecionar a data do Sistema Operacional
 SELECT now(); -- selecionar a hora do SO
 SELECT * FROM PROPRIETARIO;
@@ -306,7 +258,6 @@ SELECT * FROM PROPRIETARIO;
 SELECT NOME_DONO, YEAR(DT_NASCIMENTO)asANO
 	FROM PROPRIETARIO;
  
- /*23) Selecione o NOME e a IDade de todos os proprietários de carro*/
+ /*21)	Selecione o nome e a idade de todos os proprietários de carro*/
 SELECT NOME_DONO, TIMESTAMPDIFF(YEAR,ID_DONO,curdate())asIDade
 	FROM PROPRIETARIO;
-    
