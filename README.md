@@ -21,8 +21,8 @@ ___
 
 ### Conteúdo Principal
 
-* [Projeto](https://github.com/aluiziomonteiro/dba-detran/blob/master/docs/enunciado.docx)
-* [Diagrama](https://github.com/aluiziomonteiro/dba-detran/tree/master/db_detran_png.png)
+* [Projeto](https://github.com/aluiziomonteiro/dba-detran/tree/master/docs)
+* [Diagrama](https://github.com/aluiziomonteiro/dba-detran/blob/master/diagramas/db_detran_png.png)
 * [Script](https://github.com/aluiziomonteiro/dba-detran/blob/master/schema/db_detran.sql)
 ___
 
