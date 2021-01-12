@@ -28,7 +28,7 @@ ___
 
 ### Gerando a Base de Dados
 
-A Base de Dados pode ser gerada executando este [script](https://github.com/aluiziomonteiro/dba-cinema/blob/master/schemas/empresacinema2.sql) a partir do CMD/Windows, Terminal/Linux/MacOS ou via Workbench.
+A Base de Dados pode ser gerada executando este [script](https://github.com/aluiziomonteiro/dba-detran/blob/master/schema/db_detran.sql) a partir do CMD/Windows, Terminal/Linux/MacOS ou via Workbench.
 ___
 
 ### Autor
